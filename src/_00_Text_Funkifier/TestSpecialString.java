@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-public class _00_TestSpecialString {
+public class TestSpecialString {
 
 	//1. Take a look at the TextFunkifier interface and 
 	//   the abstract class SpecialString. Notice that the
@@ -16,7 +16,7 @@ public class _00_TestSpecialString {
 	
 	//2. Fill in the funkifyText method in the BackwardsString class
 	//   to make the JUnitTest pass.
-	@Test
+	@org.junit.Test
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
 		System.out.println(bs);
@@ -25,7 +25,7 @@ public class _00_TestSpecialString {
 	
 	//3. Fill in the funkifyTxt method in the MixedCapsString class
 	//   to make the JUnitTest case pass.
-	@Test
+	@org.junit.Test
 	public void testMixedCapsString() {
 		SpecialString mcs = new MixedCapsString("This is also a test");
 		System.out.println(mcs);
@@ -36,7 +36,7 @@ public class _00_TestSpecialString {
 	//   Override the funkifyText method to make any kind of 
 	//   new String you want. Then use the assertEquals method in
 	//   the JUnitTest case below to test your customized Special String.
-	@Test
+	@org.junit.Test
 	public void testCustomString() {
 		SpecialString cs = new CustomString("This is also a test");
 		System.out.println(cs);
